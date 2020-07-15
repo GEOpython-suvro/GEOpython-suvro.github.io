@@ -2,7 +2,7 @@ var mymap;
 function init(){
     mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
-  	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibGVvbmFyZHpoIiwiYSI6ImNqbGVqZTdnYzAzcTYza3JreHV0ODhvbnkifQ.jYF4Mv6k_QGiEItFFlYZVw', {
+  	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoic2h1YnJhdGFkYXNzaHVicm8iLCJhIjoiY2tjbnFzdmJoMDU5bDJ6cWszdXUxYjN5MCJ9.wpDBSyzR4KHXQMG62k7A3A', {
   		maxZoom: 18,
 
   		id: 'mapbox.light'
