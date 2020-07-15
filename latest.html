@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Shubro's homepage</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""/>
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+  <script src="js/vendor/jquery.hashchange.min.js"></script>
+  <script src="js/vendor/jquery.easytabs.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+  <script src="js/main.js"></script>
+  <script language="javascript" type="text/javascript" src="js/map.js"></script>
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+      <![endif]-->
+</head>
+  <body class="bg-fixed bg-1" onload = "init();">
+<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="#google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+   <div class="main-container">
+    <div class="main wrapper clearfix">
+      <!-- Header Start -->
+        <header id="header">
+            <div id="logo">
+                <h2>
+                    Shubrata Das Shubro
+                </h2>
+                <h4>
+                    GeoAI researcher, Professionally certified Data Scientist by IBM
+                </h4>
+            </div>
+        </header>
+        <!-- Header End -->
+        <!-- Main Tab Container -->
+        <div id="tab-container" class="tab-container">
+          <!-- Tab List -->
+            <ul class='etabs'>
+                <li class='tab' id="tab-about">
+                  <a href="#about"><i class="icon-user"></i><span> About Me</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#resume"><i class="icon-file-text"></i><span> Resume</span></a>
+                </li>
+
+                <li class='tab'>
+                  <a href="#certifications"><i class="icon-envelope"></i><span> Certifications</span></a>
+                </li>
+                <li class='tab'>
+                  <a href="#project"><i class="icon-heart"></i><span> Life Snippet</span></a>
+                </li>
+            </ul>
+          <!-- End Tab List -->
+            <div id="tab-data-wrap">
+              <!-- About Tab Data -->
+                <div id="about">
+                    <section class="clearfix">
+                      <div class="g2">
+                            <div class="photo">
+                                <img src="./images/me tech.png" alt="Zheng Liu">
+                            </div>
+                            <div class="info">
+                                <h2>
+                                    Shubrata Das Shubro
+                                </h2>
+                                <h4>
+                                    GeoAI researcher, Professionally certified Data Scientist by IBM
+                                </h4>
+                                <p>
+                                    I am a Master's student of Geographic Information System for Environment and Development at Jahangirnagar University, Bangladesh. My research interest is in geospatial artificial intelligence (GeoAI), data mining, Big Data, and geographic information retrieval. I would love to develop and apply machine learning, and deep learning methods to address various problems in hydrology, agriculture, forestry, food and waste management, statistics, public health,i.e., COVID-19 tracing, urban RS, LULC,GEE, Object-based image analysis, disaster or extreme events monitoring, climate change, optical and SAR RS and ecosystem change dynamics.
+                                </p>
+                            </div>
+                            </div>
+                          <div class="g1">
+                            <div id="mapid" style="width: 300px; height: 300px;">
+                            </div>
+                            <script>
+
+                            </script>
+                          </div>
+                        <div class="break"></div>
+
+                        <div class="contact-info">
+
+                          <div class="g1">
+                            <div class="item-box clearfix">
+                              <i class="icon-envelope"></i>
+                              <div class="item-data">
+                                <h3><a href="mailto:sd_shubro@geography-juniv.edu.bd">shubro_10@geography-juniv.edu.bd</a></h3>
+                                <p>Email Address</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </section><!-- content -->
+                </div>
+
+              <!-- End About Tab Data -->
+              <!-- Resume Tab Data -->
+                <div id="resume">
+                    <section class="clearfix">
+                        <div class="g2">
+                            <h3>
+                                Completed Projects, sponsored by Jahangirnagar University
+                            </h3>
+                            <ul class="no-list work">
+                                <li>
+                                    <h5>
+                                        Machine Learning Projects
+                                    </h5><span class="label label-info">2020</span>
+                                    <p>
+                                     
+Few Projects are:	Machine Learning: Create a NN that Predicts whether an Image is a Car or Airplane
+	Build a Machine Learning Web App with Streamlit and Python
+	Image Compression and Generation using Variational Autoencoders in Python_pytorch
+	Image Noise Reduction with Auto-encoders using TensorFlow
+	Generate Synthetic Images with DCGANs in Keras
+	Object Detection with Amazon Sagemaker
+	Anomaly Detection in Time Series Data with Keras
+	Perform Feature Analysis with Yellowbrick
+	Image Data Augmentation with Keras
+	Perform Real-Time Object Detection with YOLOv3
+	Classify Radio Signals from Space using Keras
+	Custom Prediction Routine on Google AI Platform
+	Image Super Resolution Using Autoencoders in Keras
+	Image Compression with K-Means Clustering
+	Traffic Sign Classification Using Deep Learning in Python.
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
+                                        Data Science Projects with Python
+                                    </h5><span class="label label-info">2020</span>
+                                    <p>
+                                        Few Projects are:
+	Image Processing with Python
+	COVID19 Data Analysis Using Python
+	Clustering Geolocation Data Intelligently in Python
+	Create Interactive Dashboards with Streamlit and Python
+	Build a Data Science Web App with Streamlit and Python
+	Data Visualization with Plotly Express
+	Statistical Data Visualization with Seaborn
+	Analyze Box Office Data with Plotly and Python
+	Geo-Visualization in Python
+	Analyze Box Office Data with Seaborn and Python
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
+                                        Data Science Projects with R
+                                    </h5><span class="label label-info">2020</span>
+                                    <p>
+                                        Few Projects are:
+	Analyze Stock Data using R and Quantmod Package
+	Build a Deep Learning Based Image Classifier with R
+	Build Data Analysis and Transformation Skills in R using DPLYR
+	Create a Buy Signal using RSI in R with the Quantmod Package
+	Create Technical Stock Charts Using R and Quantmod
+	Machine Learning_Predict Poisonous Mushrooms using a Random Forest Model and the FFTrees Package in R
+	Predict Diabetes with a Random Forest using R
+	Predict Ideal Diamonds over Good Diamonds using a Random Forest using R
+	Stock Analysis_Create a Buy Signal Filter using R and the Quantmod Package
+
+                                    </p>
+                                </li>
+                                <li>
+                                    <h5>
+                                        Projects on Image Processing with Computer Vision
+                                    </h5><span class="label label-info">2020</span>
+                                    <p>
+                                      Few Projects are:
+	Image Classification with CNNs using Keras
+	Image Denoising Using AutoEncoders in Keras and Python
+	AutoML for Computer Vision with Microsoft Custom Vision
+	Computer Vision - Object Detection with OpenCV and Python
+	Computer Vision - Image Basics with OpenCV and Python
+
+                                    </p>
+                                </li>
+
+                            </ul>
+                            <h3>
+                                Education
+                            </h3>
+                            <ul class="no-list work">
+                                <li>
+                                    <h5>
+                                        Jahangirnagar University(JU)
+                                    </h5><span class="label label-success">2019-</span>
+                                    <p>
+                                        M.Sc. in Geographic Information System for Environment and Development(MSGED), Department of Geography & Environment, JU.
+										Result: 4.00 out of 4.00
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="g1">
+                            <div class="sidebar">
+                                <h3>
+                                    Skills
+                                </h3>
+                                <h5>
+                                    Programming Language
+                                </h5>
+                                <div class="meter emerald">
+                                    <span style="width: 90%"><span>Python</span></span>
+                                </div>
+                                <div class="meter carrot">
+                                    <span style="width: 70%"><span>R</span></span>
+                                </div>
+
+                                <div class="meter sunflower">
+                                    <span style="width: 25%"><span>C#</span></span>
+                                </div>
+                                <div class="meter midnight">
+                                    <span style="width: 25%"><span>Javascript</span></span>
+                                </div>
+                                <div class="meter pomengrate">
+                                    <span style="width: 20%"><span>C++</span></span>
+                                </div>
+                                <div class="meter asbestos">
+                                    <span style="width: 15%"><span>Java</span></span>
+                                </div>
+                                <div class="break"></div>
+
+                                <h5>
+                                    Software
+                                </h5>
+                                <div class="meter emerald">
+                                    <span style="width: 83.3%"><span>ArcGIS/QGIS</span></span>
+                                </div>
+                                <div class="meter carrot">
+                                    <span style="width: 60%"><span>Matlab</span></span>
+                                </div>
+                                <div class="meter wisteria">
+                                    <span style="width: 40%"><span>IDL</span></span>
+                                </div>
+                                <div class="meter sunflower">
+                                    <span style="width: 35%"><span>R Studio</span></span>
+                                </div>
+                                <div class="meter asbestos">
+                                    <span style="width: 32%"><span>ENVI</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+              <!-- End Resume Tab Data -->
+              <!-- Project Tab Data -->
+                <div id="project">
+                    <section class="clearfix">
+                        <div class="g1">
+                            <div class="image">
+                                <img src="./images/life1.jpg" alt="">
+                                <div class="image-overlay">
+                                    <div class="image-link">
+                                        <a href="" class="btn">Full View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g1">
+                            <div class="image">
+                                <img src="./images/life10.jpg" alt="">
+                                <div class="image-overlay">
+                                    <div class="image-link">
+                                        <a href="" class="btn">Full View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g1">
+                            <div class="image">
+                                <img src="./images/life6.jpg" alt="">
+                                <div class="image-overlay">
+                                    <div class="image-link">
+                                        <a href="" class="btn">Full View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="break"></div>
+                        <div class="g1">
+                            <div class="image">
+                                <img src="./images/life11.jpg" alt="">
+                                <div class="image-overlay">
+                                    <div class="image-link">
+                                        <a href="" class="btn">Full View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g1">
+                            <div class="image">
+                                <img src="./images/life14.jpg" alt="">
+                                <div class="image-overlay">
+                                    <div class="image-link">
+                                        <a href="" class="btn">Full View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g1">
+                            <div class="image">
+                                <img src="./images/life12.jpg" alt="">
+                                <div class="image-overlay">
+                                    <div class="image-link">
+                                        <a href="" class="btn">Full View</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+              <!-- End Project Data -->
+              <!-- Certifications Tab Data -->
+                <div id="certifications">
+                    <section class="clearfix">
+                      <div class="g2">
+                          <h3>
+                              IBM Data Science Professional Certificate
+                          </h3>
+                          <ul class="no-list work">
+                              <li>
+                                  <p>
+                                      In this Professional Certificate I developed and honed hands-on skills in Data Science and Machine Learning. 
+                                  </p><span class="label label-danger">2020</span>
+                                  <p>
+                                      Besides, I have got more than 100 certificates of achievement on Machine Learning and Data Science from IBM, University of Michigan, deeplearning.ai, etc. 
+                                  </p>
+                              </li>
+
+
+                          </ul>
+                       <div class="break"></div>
+
+                    </section>
+                </div>
+              <!-- End Certifications Data -->
+            </div>
+        </div>
+        <!-- End Tab Container -->
+        <footer>
+            <p>
+                Designed by mRova. Collect from <a href="http://www.cssmoban.com/" target="_blank" title="cssmoban">cssmoban</a>
+            </p>
+        </footer>
+    </div><!-- #main -->
+</div><!-- #main-container -->
+
+
+
+</body>
+</html>
